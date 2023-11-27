@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Dashtoon_Project/static/css/main.050aa8fd.css",
+    "main.js": "/Dashtoon_Project/static/js/main.c26e1f30.js",
+    "static/js/787.2aa98dbe.chunk.js": "/Dashtoon_Project/static/js/787.2aa98dbe.chunk.js",
+    "index.html": "/Dashtoon_Project/index.html",
+    "main.050aa8fd.css.map": "/Dashtoon_Project/static/css/main.050aa8fd.css.map",
+    "main.c26e1f30.js.map": "/Dashtoon_Project/static/js/main.c26e1f30.js.map",
+    "787.2aa98dbe.chunk.js.map": "/Dashtoon_Project/static/js/787.2aa98dbe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.050aa8fd.css",
+    "static/js/main.c26e1f30.js"
+  ]
+}
