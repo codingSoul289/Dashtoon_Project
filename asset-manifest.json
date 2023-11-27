@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Dashtoon_Project/static/css/main.050aa8fd.css",
+    "main.css": "/Dashtoon_Project/static/css/main.a5e9d6f3.css",
     "main.js": "/Dashtoon_Project/static/js/main.c26e1f30.js",
     "static/js/787.2aa98dbe.chunk.js": "/Dashtoon_Project/static/js/787.2aa98dbe.chunk.js",
+    "static/media/background_site.png": "/Dashtoon_Project/static/media/background_site.946da6f859aee0c1b6ad.png",
     "index.html": "/Dashtoon_Project/index.html",
-    "main.050aa8fd.css.map": "/Dashtoon_Project/static/css/main.050aa8fd.css.map",
+    "main.a5e9d6f3.css.map": "/Dashtoon_Project/static/css/main.a5e9d6f3.css.map",
     "main.c26e1f30.js.map": "/Dashtoon_Project/static/js/main.c26e1f30.js.map",
     "787.2aa98dbe.chunk.js.map": "/Dashtoon_Project/static/js/787.2aa98dbe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.050aa8fd.css",
+    "static/css/main.a5e9d6f3.css",
     "static/js/main.c26e1f30.js"
   ]
 }
