@@ -1,19 +1,40 @@
 import React from 'react';
 
-const ComicStrip = ({ imageUrls }) => {
+const ComicStrip = ({ imageUrls, loadingStates, errorStates }) => {
   return (
     <div>
+      <h1>Comic Strip Generator</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {imageUrls.map((url, index) => (
           <div
             key={index}
             style={{
-              width: index < imageUrls.length - 1 ? '30%' : '100%', // 30% width for first 9 panels, 100% for the last panel
+              width: index < imageUrls.length - 1 ? '30%' : '30%',
+              boxSizing: 'border-box',
               padding: '10px',
-              textAlign: index === imageUrls.length - 1 ? 'center' : 'center', // Center-align the last panel
+              textAlign: index === imageUrls.length - 1 ? 'center' : 'center',
             }}
           >
-            {url && <img src={url} alt={`Panel ${index + 1}`} style={{ maxWidth: '100%', maxHeight: '300px' }} />}
+            <div
+              style={{
+                border: '1px solid #ddd',
+                borderRadius: '5px',
+                overflow: 'hidden',
+              }}
+            >
+              <h3>Enter text to generate image</h3>
+              {loadingStates[index] ? (
+                <div style={{ width: '100%', height: '300px', backgroundColor: '#000000', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  Loading...
+                </div>
+              ) : errorStates[index] ? (
+                <div style={{ width: '100%', height: '300px', backgroundColor: '#000000', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  Error fetching image
+                </div>
+              ) : (
+                <img src={url} style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+              )}
+            </div>
           </div>
         ))}
       </div>
