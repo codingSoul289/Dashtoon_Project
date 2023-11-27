@@ -29,6 +29,11 @@
   width: 100%;
 }
 
+.comic-strip{
+  align-self: right;
+  align-content: right;
+  align-items: center;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

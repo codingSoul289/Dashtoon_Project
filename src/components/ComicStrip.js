@@ -4,14 +4,14 @@ const ComicStrip = ({ imageUrls, loadingStates, errorStates }) => {
   return (
     <div>
       <h1>Comic Strip Generator</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div className='comic-strip' style={{ display: 'flex', flexWrap: 'wrap' }}>
         {imageUrls.map((url, index) => (
           <div
             key={index}
             style={{
-              width: index < imageUrls.length - 1 ? '30%' : '30%',
+              width: index < imageUrls.length - 1 ? '33%' : '33%',
               boxSizing: 'border-box',
-              padding: '10px',
+              padding: '5px',
               textAlign: index === imageUrls.length - 1 ? 'center' : 'center',
             }}
           >
