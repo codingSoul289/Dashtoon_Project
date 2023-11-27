@@ -7,11 +7,16 @@ In the project directory, run:
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Live Site
+
+Site is live at [https://codingsoul289.github.io/Dashtoon_Project/](https://codingsoul289.github.io/Dashtoon_Project/).
+
 ## Usage
 
 1. In the UI, type text in the given inputs.
 2. Click on "Generate Image".
 3. The corresponding panel will be set to "Loading". Wait for around 30-60 seconds, beyond which it will print Error fetching.
+
 
 ## Features
 
