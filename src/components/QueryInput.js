@@ -39,7 +39,7 @@ const QueryInput = ({ onSubmit }) => {
 
   return (
     <div>
-      <h1>TannyComics Generator</h1>
+      <h1>Tanny Comics Generator</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {queries.map((query, index) => (
           <div key={index} style={{ width: '30%', padding: '10px' }}>
@@ -53,7 +53,7 @@ const QueryInput = ({ onSubmit }) => {
             <button onClick={() => handleSubmit(index)}>
               {loadingStates[index] ? 'Generate Image' : 'Generate Image'}
             </button>
-            {errorStates[index] && <div>Error fetching image</div>}
+            {errorStates[index] && <div>Generate Image</div>}
           </div>
         ))}
       </div>

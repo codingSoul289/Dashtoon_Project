@@ -22,7 +22,6 @@ const ComicStrip = ({ imageUrls, loadingStates, errorStates }) => {
                 overflow: 'hidden',
               }}
             >
-              <h3>Enter text to generate image</h3>
               {loadingStates[index] ? (
                 <div style={{ width: '100%', height: '300px', backgroundColor: '#000000', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   Loading...
@@ -32,8 +31,12 @@ const ComicStrip = ({ imageUrls, loadingStates, errorStates }) => {
                   Error fetching image
                 </div>
               ) : (
-                <img src={url} style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
-              )}
+                <>
+                  {!url && <h3>Enter text to generate image</h3>}
+                  {url && <img src={url} alt={`Panel ${index + 1}`} style={{ width: '100%', height: '300px', objectFit: 'cover' }} />}
+                </>
+              )
+              }
             </div>
           </div>
         ))}
