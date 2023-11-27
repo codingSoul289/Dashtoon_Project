@@ -10,13 +10,14 @@ const QueryInput = ({ onSubmit }) => {
     setQueries(newQueries);
   };
 
-  const handleSubmit = () => {
-    // Call the onSubmit callback with the array of queries
-    onSubmit(queries);
+  const handleSubmit = (index) => {
+    // Call the onSubmit callback with the query for the specified index
+    onSubmit(index, queries[index]);
   };
 
   return (
     <div>
+      <h1>Queries to Image Generator</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {queries.map((query, index) => (
           <div key={index} style={{ width: '30%', padding: '10px' }}>
@@ -27,10 +28,10 @@ const QueryInput = ({ onSubmit }) => {
               onChange={(event) => handleQueryChange(index, event)}
               placeholder={`Query for Panel ${index + 1}`}
             />
+            <button onClick={() => handleSubmit(index)}>Submit Query</button>
           </div>
         ))}
       </div>
-      <button onClick={handleSubmit}>Submit Queries</button>
     </div>
   );
 };

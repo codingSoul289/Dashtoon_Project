@@ -10,10 +10,9 @@ const ComicStrip = ({ imageUrls }) => {
             style={{
               width: index < imageUrls.length - 1 ? '30%' : '100%', // 30% width for first 9 panels, 100% for the last panel
               padding: '10px',
-              textAlign: index === imageUrls.length - 1 ? 'center' : 'left', // Center-align the last panel
+              textAlign: index === imageUrls.length - 1 ? 'center' : 'center', // Center-align the last panel
             }}
           >
-            <h3>Panel {index + 1}</h3>
             {url && <img src={url} alt={`Panel ${index + 1}`} style={{ maxWidth: '100%', maxHeight: '300px' }} />}
           </div>
         ))}
